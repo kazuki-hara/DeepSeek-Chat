@@ -8,24 +8,28 @@ Mac mini, M2 Pro, 16GB
 
 1. ollamaのインストールし、ollamaコマンドでDeepSeek-R1日本語学習済みモデルをpullし、起動する。
 
-'''
+```
+# ollamaインストール
 brew install ollama
 
+# 実行しっぱなしにする
 ollama serve
 
-# 別タブで
+# 別タブで実行する
 ollama run hf.co/bluepen5805/DeepSeek-R1-Distill-Qwen-14B-Japanese-gguf
-'''
+```
 
 2. 必要なpythonライブラリをインストールし、streamlitを起動する
 
-'''
+```
+# ライブラリのインストール
 uv sync
 
+# 起動
 uv run streamlit run main.py
-'''
+```
 
-### 参考資料
+## 参考資料
 
 - https://huggingface.co/bluepen5805/DeepSeek-R1-Distill-Qwen-14B-Japanese-gguf/tree/main
 - https://zenn.dev/nishijima13/articles/3b1a50b8728261
